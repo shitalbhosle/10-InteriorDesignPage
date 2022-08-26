@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interior Design Page</title>
+    <script
+      src="https://kit.fontawesome.com/4649e5beb3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-center">
+        <!--Nav Header-->
+        <div class="nav-header">
+          <h3>LOGO<br />HERE</h3>
+          <button class="nav-toggle" id="nav-toggle">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+        <!--End of header-->
+
+        <ul class="nav-links show-links" id="nav-links">
+            <li>
+                <a href="#" class="nav-link" id="nav-link">About Us</a>
+            </li>
+            <li>
+                <a href="#" class="nav-link" id="nav-link">Benefits</a>
+            </li>
+            <li>
+                <a href="#" class="nav-link" id="nav-link">Projects</a>
+            </li>
+            <li>
+                <a href="#" class="nav-link" id="nav-link">Stages</a>
+            </li>
+            
+            <li>
+                <a href="#" class="nav-link" id="nav-link">Services</a>
+            </li>
+        </ul>
+        <div class="contact">
+            <i class="fa-solid fa-phone-volume"></i>
+            <p class="name">Call Us</p>
+            <p class="num">+38(097) 654 54 34</p>
+        </div>
+      </div>
+    </nav>
+    <div class="line"></div>
+
+
+    <!--Hero Section-->
+    <section class="hero">
+        <article class="left">
+            <h1>Interior Design That Care <br> About Details</h1>
+            <button class="btn">Learn More</button>
+        </article>
+
+        <article class="right">
+            <div class="card1">
+            <i class="fa-solid fa-puzzle-piece"></i>
+            <p>we create your space better based on your own idea</p>
+            <div class="roads1"></div>
+            <div class="circle1"></div>
+            </div>
+
+            <div class="card2">
+                <i class="fa-solid fa-lightbulb"></i>
+                <p>Innovation ideas,stylish design for home and business</p>
+                <div class="roads2"></div>
+                <div class="circle2"></div>
+            </div>
+        </article>
+    </section>
+
+    <script>
+        const navBtn = document.getElementById("nav-toggle");
+        const links = document.getElementById("nav-links");
+  
+        navBtn.addEventListener("click",()=>{
+          links.classList.toggle("show-links");
+        })
+      </script>
+  </body>
+</html>

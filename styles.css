@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #F7ECDE;
+    
+}
+.contact{
+    display: none;
+}
+.navbar{
+    background-color: black;
+    color: #fff;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:2;
+  }
+  .nav-center{
+    width:100%;
+    max-width: 1270px;
+  }
+  .nav-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1rem 2rem;
+  }
+  .nav-toggle{
+    background: transparent;
+    border: transparent;
+    font-size: 1.5rem;
+    color:#fff;
+  }
+  .nav-toggle:hover{
+    transform: scale(1.2);
+    color:gray;
+    cursor: pointer;
+  }
+  .nav-link{
+    display: block;
+    padding:1rem 2rem;
+    /* text-align: center; */
+    color:#fff;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    transition: all 0.2s ease-in-out;
+  }
+  .nav-link:hover{
+    color:#020236;
+    background-color: gray;
+    padding-left: 2.25rem;
+  }
+  .nav-links{
+    height: 0;
+    overflow: hidden;
+  }
+  .show-links{
+    height: 300px;
+  }
+  .nav-item{
+    display: none;
+  }
+  .hero{
+    margin-top: 7rem;
+}
+  .left h1{
+    font-size: 2.25rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .btn{
+    padding: 10px 20px;
+    border-radius: 25px;
+    background: transparent;
+    border: 2px solid #000;
+    color:#000;
+    font-size: 17px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 700;
+    letter-spacing: 1px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+  }
+  .btn:hover{
+    background: #000;
+    color: #fff;
+  }
+  .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem
+  }
+  .card1{
+    width: 270px;
+    height: 150px;
+    background: rgba(250, 244, 244, 0.9);
+    padding: 25px;
+}
+.card2{
+    width: 270px;
+    height: 150px;
+    background: rgba(250, 244, 244, 0.9);
+    padding: 25px;
+}
+.fa-puzzle-piece{
+    background-color: #fff;
+    padding:7px 27px;
+    color:#000;
+    border-radius: 22px;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+.fa-lightbulb{
+    font-size: 20px;
+    background-color: #fff;
+    padding:7px 27px;
+    color:#000;
+    border-radius: 22px;
+    margin-bottom: 15px;
+}
+@media screen and (min-width:992px){
+    body{
+        background: url('./images/background.jpg') no-repeat center/cover;
+        font-family: 'Roboto', sans-serif;
+        height: 100vh;
+        
+    }
+    .nav-header h3{
+       margin-top: -200px;
+       font-size: 1.5rem;
+    }
+    .nav-toggle{
+        display: none;
+    }
+    .navbar{
+        background: transparent;
+    }
+    .nav-center{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1rem;
+    }
+    .nav-links{
+        display: flex;
+
+    }
+    .contact{
+        display: block;
+        position: relative;
+    }
+    .name{
+        margin-left: 35px;
+        margin-top: 0px;
+    }
+    .num{
+        margin-left: 35px;
+    }
+    .fa-phone-volume{
+        font-size: 18px;
+        position: absolute;
+        top:5%;
+    }
+    
+    .line{
+        text-decoration: underline;
+        background-color: #fff;
+        width:62rem;
+        height: 2px;
+        margin-left: 325px;
+        /* margin-top:1rem; */
+        position: fixed;
+    }
+    .hero{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 7rem;
+        color: #fff;
+    }
+    
+    .left h1{
+        font-size:50px;
+        margin-top: 100px;
+    }
+    .btn{
+        margin-left: 150px;
+        margin-top: 75px;
+    }
+    .right{
+        position: relative;
+    }
+    .card1{
+        width: 270px;
+        height: 150px;
+        background: rgb(255, 255, 255, 0.2);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 25px;
+        margin-left: 345px;
+        position: relative;
+    }
+    .fa-puzzle-piece{
+        background-color: #fff;
+        padding:7px 27px;
+        color:#000;
+        border-radius: 22px;
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+    .fa-lightbulb{
+        font-size: 20px;
+        background-color: #fff;
+        padding:7px 27px;
+        color:#000;
+        border-radius: 22px;
+        margin-bottom: 15px;
+    }
+    .card2{
+        position: absolute;
+        top:90%;
+        right: 30%;
+        width: 270px;
+        height: 150px;
+        background: rgb(255, 255, 255, 0.2);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 25px;
+        margin-right: 115px;
+    }
+    .roads1{
+        height: 60px;
+        width: 1px;
+        background-color: #fff;
+        position: absolute;
+        bottom: -39%;
+        right: 66px;
+    }
+    .roads2{
+        height: 1px;
+        width: 60px;
+        background-color: #fff;
+        position: absolute;
+        bottom: 40%;
+        right: -60px;
+    }
+    .circle1{
+        width:15px;
+        height: 15px;
+        background-color: #fff;
+        border-radius: 10px;
+        position: absolute;
+        bottom: -39%;
+        right: 22%;
+    }
+    .circle2{
+        width:15px;
+        height: 15px;
+        background-color: #fff;
+        border-radius: 10px;
+        position: absolute;
+        right: -27%;
+        bottom: 34%;
+    }
+    .btn{
+        padding: 15px 23px;
+        border-radius: 25px;
+        background: transparent;
+        border: 2px solid #fff;
+        color:#fff;
+        font-size: 17px;
+        text-transform: uppercase;
+        cursor: pointer;
+        font-weight: 700;
+        letter-spacing: 1px;
+    
+    }
+}
